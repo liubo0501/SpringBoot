@@ -1,0 +1,5 @@
+2018-01-25 10:55:43.035 [http-nio-8084-exec-1] WARN  com.service.MyService - MyService This is a warn message
+2018-01-25 10:55:43.035 [http-nio-8084-exec-1] ERROR com.service.MyService - MyService This is an error message
+2018-01-25 10:59:32.466 [http-nio-8084-exec-2] INFO  com.service.MyService - MyService This is an info message
+2018-01-25 10:59:32.466 [http-nio-8084-exec-2] WARN  com.service.MyService - MyService This is a warn message
+2018-01-25 10:59:32.466 [http-nio-8084-exec-2] ERROR com.service.MyService - MyService This is an error message

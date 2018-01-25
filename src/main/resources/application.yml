@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: boot
+  datasource: 
+     type: com.alibaba.druid.pool.DruidDataSource
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://192.168.0.249:3306/anbot?useUnicode=true&characterEncoding=utf-8&useSSL=false&tinyInt1isBit=false
+     username: root
+     password: anbot2017
+
+mybatis:
+  type-aliases-package: com.entity
+  config-locations:  classpath:mybatis-config.xml
+  mapper-locations:  classpath:mybatis/mapper/*.xml
+  
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+    
+#logging: 
+#   file: log.log
+#   level:
+#     com.controller: debug
+#     com.service : warn
+    
+ 

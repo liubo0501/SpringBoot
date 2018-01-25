@@ -1,0 +1,587 @@
+2018-01-25 10:28:49.309  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:28:49.311  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:28:49.561  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3512e385: startup date [Thu Jan 25 10:28:49 CST 2018]; root of context hierarchy
+2018-01-25 10:28:51.149  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:28:51.157  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:28:51.158  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:28:51.241  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:28:51.241  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1682 ms
+2018-01-25 10:28:51.369  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:28:51.373  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:28:51.373  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:28:51.373  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:28:51.373  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:28:51.936  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3512e385: startup date [Thu Jan 25 10:28:49 CST 2018]; root of context hierarchy
+2018-01-25 10:28:51.941  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:28:51.942  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:28:51.942  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:28:51.980  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:28:51.981  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:28:51.982  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:28:51.983  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:28:52.001  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:28:52.001  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:28:52.012  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:28:52.013  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:28:52.013  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:28:52.029  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:28:52.053  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:28:52.434  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:28:52.483  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:28:52.484  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:28:52.487  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:28:52.525  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:28:52.531  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 3.487 seconds (JVM running for 3.95)
+2018-01-25 10:28:56.433  INFO 8656 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 10:28:56.433  INFO 8656 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 10:28:56.450  INFO 8656 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-01-25 10:28:56.465 DEBUG 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is a debug message
+2018-01-25 10:28:56.465  INFO 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is an info message
+2018-01-25 10:28:56.465  WARN 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is a warn message
+2018-01-25 10:28:56.465 ERROR 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is an error message
+2018-01-25 10:28:56.506  INFO 8656 --- [http-nio-8084-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-01-25 10:29:50.116  INFO 8656 --- [Thread-7] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3512e385: startup date [Thu Jan 25 10:28:49 CST 2018]; root of context hierarchy
+2018-01-25 10:29:50.119  INFO 8656 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:29:50.120  INFO 8656 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:29:50.125  INFO 8656 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-01-25 10:29:50.480  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:29:50.480  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:29:50.481  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34d44104: startup date [Thu Jan 25 10:29:50 CST 2018]; root of context hierarchy
+2018-01-25 10:29:51.380 ERROR 8656 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:102) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:443) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:127) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.Application.main(Application.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'robotMapper' defined in file [G:\workspace\SpringBoot\target\classes\com\mapper\RobotMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Could not convert argument value of type [java.lang.String] to required type [java.lang.Class]: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Class'; nested exception is java.lang.IllegalArgumentException: Error loading class [com.mapper.RobotMapper]: problem with class file or dependent class.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:723) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:923) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:804) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:558) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:389) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$DevToolsDataSourceCondition.getMatchOutcome(DevToolsDataSourceAutoConfiguration.java:159) ~[spring-boot-devtools-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	... 22 common frames omitted
+
+2018-01-25 10:29:51.382  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34d44104: startup date [Thu Jan 25 10:29:50 CST 2018]; root of context hierarchy
+2018-01-25 10:29:51.382  WARN 8656 --- [restartedMain] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'robotMapper' defined in file [G:\workspace\SpringBoot\target\classes\com\mapper\RobotMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Could not convert argument value of type [java.lang.String] to required type [java.lang.Class]: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Class'; nested exception is java.lang.IllegalArgumentException: Error loading class [com.mapper.RobotMapper]: problem with class file or dependent class.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:723) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:923) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:804) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:558) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:432) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:515) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:508) ~[spring-beans-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1188) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:818) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:804) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:790) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:744) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at com.Application.main(Application.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+
+2018-01-25 10:29:56.881  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:29:56.881  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:29:56.882  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6928fb26: startup date [Thu Jan 25 10:29:56 CST 2018]; root of context hierarchy
+2018-01-25 10:29:57.607  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:29:57.608  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:29:57.608  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:29:57.620  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:29:57.620  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 738 ms
+2018-01-25 10:29:57.641  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:29:57.642  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:29:57.642  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:29:57.642  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:29:57.642  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:29:57.759  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6928fb26: startup date [Thu Jan 25 10:29:56 CST 2018]; root of context hierarchy
+2018-01-25 10:29:57.761  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:29:57.761  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:29:57.761  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:29:57.765  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:29:57.765  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:29:57.766  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:29:57.767  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:29:57.772  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:29:57.772  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:29:57.777  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:29:57.778  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:29:57.778  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:29:57.782  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:29:57.789  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:29:57.826  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:29:58.054  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:29:58.054  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:29:58.056  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:29:58.062  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:29:58.063  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 1.246 seconds (JVM running for 69.48)
+2018-01-25 10:33:25.392  INFO 8656 --- [Thread-15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6928fb26: startup date [Thu Jan 25 10:29:56 CST 2018]; root of context hierarchy
+2018-01-25 10:33:25.396  INFO 8656 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:33:25.397  INFO 8656 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:33:25.678  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:33:25.678  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:33:25.684  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e5f1966: startup date [Thu Jan 25 10:33:25 CST 2018]; root of context hierarchy
+2018-01-25 10:33:26.355  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:33:26.356  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:33:26.356  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:33:26.366  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:33:26.367  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 683 ms
+2018-01-25 10:33:26.385  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:33:26.386  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:33:26.387  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:33:26.387  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:33:26.387  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:33:26.474  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e5f1966: startup date [Thu Jan 25 10:33:25 CST 2018]; root of context hierarchy
+2018-01-25 10:33:26.476  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:33:26.476  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:33:26.476  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:33:26.479  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:33:26.479  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:33:26.481  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:33:26.481  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:33:26.486  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:33:26.487  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:33:26.492  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:33:26.492  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:33:26.492  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:33:26.495  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:33:26.503  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:33:26.535  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:33:26.570  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:33:26.570  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:33:26.572  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:33:26.586  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:33:26.591  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.941 seconds (JVM running for 278.004)
+2018-01-25 10:33:41.024  INFO 8656 --- [Thread-26] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e5f1966: startup date [Thu Jan 25 10:33:25 CST 2018]; root of context hierarchy
+2018-01-25 10:33:41.025  INFO 8656 --- [Thread-26] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:33:41.029  INFO 8656 --- [Thread-26] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:33:41.297  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:33:41.298  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:33:41.299  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@417c7c12: startup date [Thu Jan 25 10:33:41 CST 2018]; root of context hierarchy
+2018-01-25 10:33:41.981  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:33:41.981  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:33:41.981  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:33:41.992  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:33:41.992  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 693 ms
+2018-01-25 10:33:42.012  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:33:42.013  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:33:42.013  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:33:42.013  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:33:42.013  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:33:42.104  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@417c7c12: startup date [Thu Jan 25 10:33:41 CST 2018]; root of context hierarchy
+2018-01-25 10:33:42.106  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:33:42.106  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:33:42.106  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:33:42.108  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:33:42.109  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:33:42.111  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:33:42.111  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:33:42.116  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:33:42.116  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:33:42.119  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:33:42.120  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:33:42.120  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:33:42.123  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:33:42.129  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:33:42.179  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:33:42.201  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:33:42.201  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:33:42.203  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:33:42.211  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:33:42.212  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.947 seconds (JVM running for 293.626)
+2018-01-25 10:34:18.781  INFO 8656 --- [Thread-34] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@417c7c12: startup date [Thu Jan 25 10:33:41 CST 2018]; root of context hierarchy
+2018-01-25 10:34:18.784  INFO 8656 --- [Thread-34] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:34:18.785  INFO 8656 --- [Thread-34] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:34:19.067  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:34:19.067  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:34:19.068  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d0a653d: startup date [Thu Jan 25 10:34:19 CST 2018]; root of context hierarchy
+2018-01-25 10:34:19.710  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:34:19.711  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:34:19.711  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:34:19.721  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:34:19.721  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 653 ms
+2018-01-25 10:34:19.737  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:34:19.738  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:34:19.738  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:34:19.738  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:34:19.738  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:34:19.817  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d0a653d: startup date [Thu Jan 25 10:34:19 CST 2018]; root of context hierarchy
+2018-01-25 10:34:19.819  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:34:19.819  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:34:19.819  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:34:19.821  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:34:19.822  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:34:19.822  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:34:19.823  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:34:19.826  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:34:19.826  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:34:19.830  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:34:19.830  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:34:19.830  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:34:19.833  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:34:19.840  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:34:19.869  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:34:19.889  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:34:19.890  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:34:19.891  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:34:19.899  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:34:19.901  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.861 seconds (JVM running for 331.313)
+2018-01-25 10:34:34.375  INFO 8656 --- [Thread-42] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d0a653d: startup date [Thu Jan 25 10:34:19 CST 2018]; root of context hierarchy
+2018-01-25 10:34:34.378  INFO 8656 --- [Thread-42] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:34:34.379  INFO 8656 --- [Thread-42] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:34:34.616  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:34:34.616  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:34:34.618  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8cc1e03: startup date [Thu Jan 25 10:34:34 CST 2018]; root of context hierarchy
+2018-01-25 10:34:35.242  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:34:35.243  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:34:35.243  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:34:35.253  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:34:35.253  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 635 ms
+2018-01-25 10:34:35.269  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:34:35.270  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:34:35.270  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:34:35.270  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:34:35.270  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:34:35.344  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8cc1e03: startup date [Thu Jan 25 10:34:34 CST 2018]; root of context hierarchy
+2018-01-25 10:34:35.346  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:34:35.346  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:34:35.346  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:34:35.348  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:34:35.348  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:34:35.349  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:34:35.349  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:34:35.353  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:34:35.353  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:34:35.356  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:34:35.356  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:34:35.356  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:34:35.359  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:34:35.365  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:34:35.393  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:34:35.413  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:34:35.414  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:34:35.415  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:34:35.425  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:34:35.427  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.842 seconds (JVM running for 346.84)
+2018-01-25 10:34:42.880  INFO 8656 --- [Thread-50] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8cc1e03: startup date [Thu Jan 25 10:34:34 CST 2018]; root of context hierarchy
+2018-01-25 10:34:42.882  INFO 8656 --- [Thread-50] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:34:42.883  INFO 8656 --- [Thread-50] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:34:43.140  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:34:43.140  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:34:43.141  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c61b634: startup date [Thu Jan 25 10:34:43 CST 2018]; root of context hierarchy
+2018-01-25 10:34:43.770  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:34:43.771  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:34:43.771  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:34:43.781  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:34:43.781  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 640 ms
+2018-01-25 10:34:43.796  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:34:43.796  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:34:43.797  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:34:43.797  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:34:43.797  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:34:43.874  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c61b634: startup date [Thu Jan 25 10:34:43 CST 2018]; root of context hierarchy
+2018-01-25 10:34:43.875  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:34:43.876  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:34:43.877  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:34:43.880  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:34:43.882  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:34:43.886  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:34:43.886  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:34:43.890  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:34:43.890  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:34:43.895  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:34:43.896  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:34:43.896  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:34:43.900  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:34:43.907  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:34:43.942  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:34:43.961  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:34:43.961  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:34:43.963  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:34:44.012  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:34:44.013  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.896 seconds (JVM running for 355.426)
+2018-01-25 10:35:21.528  INFO 8656 --- [Thread-58] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c61b634: startup date [Thu Jan 25 10:34:43 CST 2018]; root of context hierarchy
+2018-01-25 10:35:21.529  INFO 8656 --- [Thread-58] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:35:21.529  INFO 8656 --- [Thread-58] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:35:21.738  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:35:21.738  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:35:21.740  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10ce153d: startup date [Thu Jan 25 10:35:21 CST 2018]; root of context hierarchy
+2018-01-25 10:35:22.369  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:35:22.370  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:35:22.370  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:35:22.380  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:35:22.380  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 640 ms
+2018-01-25 10:35:22.395  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:35:22.395  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:35:22.396  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:35:22.396  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:35:22.396  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:35:22.474  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10ce153d: startup date [Thu Jan 25 10:35:21 CST 2018]; root of context hierarchy
+2018-01-25 10:35:22.475  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:35:22.475  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:35:22.475  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:35:22.477  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:35:22.478  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:35:22.479  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:35:22.479  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:35:22.490  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:35:22.490  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:35:22.495  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:35:22.495  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:35:22.495  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:35:22.500  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:35:22.508  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:35:22.546  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:35:22.566  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:35:22.566  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:35:22.569  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:35:22.580  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:35:22.582  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.868 seconds (JVM running for 393.994)
+2018-01-25 10:35:37.027  INFO 8656 --- [Thread-66] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10ce153d: startup date [Thu Jan 25 10:35:21 CST 2018]; root of context hierarchy
+2018-01-25 10:35:37.030  INFO 8656 --- [Thread-66] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:35:37.030  INFO 8656 --- [Thread-66] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:35:37.285  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:35:37.286  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:35:37.287  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c9603ec: startup date [Thu Jan 25 10:35:37 CST 2018]; root of context hierarchy
+2018-01-25 10:35:37.905  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:35:37.905  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:35:37.905  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:35:37.915  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:35:37.916  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 629 ms
+2018-01-25 10:35:37.931  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:35:37.932  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:35:37.932  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:35:37.932  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:35:37.932  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:35:38.013  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c9603ec: startup date [Thu Jan 25 10:35:37 CST 2018]; root of context hierarchy
+2018-01-25 10:35:38.015  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:35:38.015  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:35:38.015  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:35:38.017  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:35:38.017  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:35:38.018  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:35:38.019  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:35:38.022  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:35:38.023  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:35:38.027  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:35:38.027  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:35:38.027  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:35:38.030  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:35:38.037  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:35:38.064  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:35:38.083  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:35:38.083  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:35:38.084  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:35:38.089  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:35:38.091  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.831 seconds (JVM running for 409.503)
+2018-01-25 10:35:52.521  INFO 8656 --- [Thread-74] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c9603ec: startup date [Thu Jan 25 10:35:37 CST 2018]; root of context hierarchy
+2018-01-25 10:35:52.522  INFO 8656 --- [Thread-74] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:35:52.522  INFO 8656 --- [Thread-74] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:35:52.762  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:35:52.762  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:35:52.763  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25931bf: startup date [Thu Jan 25 10:35:52 CST 2018]; root of context hierarchy
+2018-01-25 10:35:53.378  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:35:53.378  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:35:53.379  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:35:53.388  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:35:53.389  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 626 ms
+2018-01-25 10:35:53.403  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:35:53.404  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:35:53.404  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:35:53.404  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:35:53.404  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:35:53.472  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25931bf: startup date [Thu Jan 25 10:35:52 CST 2018]; root of context hierarchy
+2018-01-25 10:35:53.473  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:35:53.473  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:35:53.473  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:35:53.475  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:35:53.475  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:35:53.476  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:35:53.477  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:35:53.480  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:35:53.480  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:35:53.483  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:35:53.483  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:35:53.483  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:35:53.486  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:35:53.492  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:35:53.515  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:35:53.533  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:35:53.533  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:35:53.534  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:35:53.540  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:35:53.543  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.804 seconds (JVM running for 424.954)
+2018-01-25 10:35:56.004  INFO 8656 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 10:35:56.004  INFO 8656 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 10:35:56.014  INFO 8656 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2018-01-25 10:35:56.016 DEBUG 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is a debug message
+2018-01-25 10:35:56.017  INFO 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is an info message
+2018-01-25 10:35:56.017  WARN 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is a warn message
+2018-01-25 10:35:56.017 ERROR 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is an error message
+2018-01-25 10:35:56.021  INFO 8656 --- [http-nio-8084-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2018-01-25 10:35:56.053  WARN 8656 --- [http-nio-8084-exec-1] com.service.MyService                    : MyService This is a debug message
+2018-01-25 10:35:56.053  WARN 8656 --- [http-nio-8084-exec-1] com.service.MyService                    : MyService This is a warn message
+2018-01-25 10:35:56.054 ERROR 8656 --- [http-nio-8084-exec-1] com.service.MyService                    : MyService This is an error message
+2018-01-25 10:36:44.190  INFO 8656 --- [Thread-82] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25931bf: startup date [Thu Jan 25 10:35:52 CST 2018]; root of context hierarchy
+2018-01-25 10:36:44.193  INFO 8656 --- [Thread-82] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:36:44.194  INFO 8656 --- [Thread-82] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:36:44.196  INFO 8656 --- [Thread-82] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2018-01-25 10:36:44.391  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:36:44.391  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:36:44.392  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2fe92e3d: startup date [Thu Jan 25 10:36:44 CST 2018]; root of context hierarchy
+2018-01-25 10:36:45.011  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:36:45.011  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:36:45.011  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:36:45.021  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:36:45.022  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 630 ms
+2018-01-25 10:36:45.047  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:36:45.048  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:36:45.048  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:36:45.048  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:36:45.048  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:36:45.127  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2fe92e3d: startup date [Thu Jan 25 10:36:44 CST 2018]; root of context hierarchy
+2018-01-25 10:36:45.129  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:36:45.129  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:36:45.129  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:36:45.131  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:36:45.131  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:36:45.132  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:36:45.132  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:36:45.135  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:36:45.135  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:36:45.139  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:36:45.139  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:36:45.139  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:36:45.142  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:36:45.148  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:36:45.187  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:36:45.219  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:36:45.220  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:36:45.221  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:36:45.240  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:36:45.242  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.873 seconds (JVM running for 476.652)
+2018-01-25 10:36:46.648  INFO 8656 --- [Thread-90] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2fe92e3d: startup date [Thu Jan 25 10:36:44 CST 2018]; root of context hierarchy
+2018-01-25 10:36:46.649  INFO 8656 --- [Thread-90] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:36:46.649  INFO 8656 --- [Thread-90] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:36:46.857  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:36:46.858  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:36:46.859  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c00b892: startup date [Thu Jan 25 10:36:46 CST 2018]; root of context hierarchy
+2018-01-25 10:36:47.468  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:36:47.468  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:36:47.468  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:36:47.478  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:36:47.479  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 620 ms
+2018-01-25 10:36:47.495  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:36:47.495  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:36:47.495  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:36:47.495  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:36:47.496  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:36:47.568  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c00b892: startup date [Thu Jan 25 10:36:46 CST 2018]; root of context hierarchy
+2018-01-25 10:36:47.570  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:36:47.570  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:36:47.570  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:36:47.572  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:36:47.572  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:36:47.572  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:36:47.573  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:36:47.576  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:36:47.576  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:36:47.580  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:36:47.580  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:36:47.580  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:36:47.583  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:36:47.590  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:36:47.617  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:36:47.635  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:36:47.636  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:36:47.637  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:36:47.642  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:36:47.644  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.809 seconds (JVM running for 479.054)
+2018-01-25 10:36:49.034  INFO 8656 --- [Thread-98] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c00b892: startup date [Thu Jan 25 10:36:46 CST 2018]; root of context hierarchy
+2018-01-25 10:36:49.037  INFO 8656 --- [Thread-98] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:36:49.037  INFO 8656 --- [Thread-98] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:36:49.223  INFO 8656 --- [restartedMain] com.Application                          : Starting Application on 2016-20120726FY with PID 8656 (G:\workspace\SpringBoot\target\classes started by Administrator in G:\workspace\SpringBoot)
+2018-01-25 10:36:49.223  INFO 8656 --- [restartedMain] com.Application                          : The following profiles are active: dev
+2018-01-25 10:36:49.224  INFO 8656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@603f0af2: startup date [Thu Jan 25 10:36:49 CST 2018]; root of context hierarchy
+2018-01-25 10:36:49.841  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8084 (http)
+2018-01-25 10:36:49.841  INFO 8656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-25 10:36:49.841  INFO 8656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-25 10:36:49.851  INFO 8656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-25 10:36:49.852  INFO 8656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 628 ms
+2018-01-25 10:36:49.865  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-25 10:36:49.866  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-25 10:36:49.866  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-25 10:36:49.866  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-25 10:36:49.866  INFO 8656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-25 10:36:49.934  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@603f0af2: startup date [Thu Jan 25 10:36:49 CST 2018]; root of context hierarchy
+2018-01-25 10:36:49.936  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in JSONPResponseBodyAdvice
+2018-01-25 10:36:49.936  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-01-25 10:36:49.936  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Detected ResponseBodyAdvice bean in fastJsonViewResponseBodyAdvice
+2018-01-25 10:36:49.938  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello1]}" onto public java.lang.String com.controller.MyController.Hello()
+2018-01-25 10:36:49.938  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sample]}" onto public java.lang.String com.controller.MyController.sample()
+2018-01-25 10:36:49.939  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-25 10:36:49.939  INFO 8656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-25 10:36:49.942  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:36:49.942  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:36:49.945  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in JSONPResponseBodyAdvice
+2018-01-25 10:36:49.945  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-01-25 10:36:49.945  INFO 8656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected ResponseBodyAdvice implementation in fastJsonViewResponseBodyAdvice
+2018-01-25 10:36:49.949  INFO 8656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-25 10:36:49.955  WARN 8656 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-25 10:36:49.978  INFO 8656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-25 10:36:49.995  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-25 10:36:49.996  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-01-25 10:36:49.997  INFO 8656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-01-25 10:36:50.001  INFO 8656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8084 (http)
+2018-01-25 10:36:50.003  INFO 8656 --- [restartedMain] com.Application                          : Started Application in 0.8 seconds (JVM running for 481.414)
+2018-01-25 10:36:53.531  INFO 8656 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-25 10:36:53.531  INFO 8656 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-25 10:36:53.536  INFO 8656 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2018-01-25 10:36:53.538 DEBUG 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is a debug message
+2018-01-25 10:36:53.539  INFO 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is an info message
+2018-01-25 10:36:53.539  WARN 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is a warn message
+2018-01-25 10:36:53.539 ERROR 8656 --- [http-nio-8084-exec-1] com.controller.MyController              : This is an error message
+2018-01-25 10:36:53.545  INFO 8656 --- [http-nio-8084-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2018-01-25 10:36:53.574  WARN 8656 --- [http-nio-8084-exec-1] com.service.MyService                    : MyService This is a warn message
+2018-01-25 10:36:53.574 ERROR 8656 --- [http-nio-8084-exec-1] com.service.MyService                    : MyService This is an error message
+2018-01-25 10:45:21.155  INFO 8656 --- [Thread-106] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@603f0af2: startup date [Thu Jan 25 10:36:49 CST 2018]; root of context hierarchy
+2018-01-25 10:45:21.156  INFO 8656 --- [Thread-106] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-25 10:45:21.156  INFO 8656 --- [Thread-106] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-01-25 10:45:21.157  INFO 8656 --- [Thread-106] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
