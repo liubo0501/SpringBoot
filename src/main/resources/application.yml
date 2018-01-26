@@ -9,7 +9,27 @@ spring:
      url: jdbc:mysql://192.168.0.249:3306/anbot?useUnicode=true&characterEncoding=utf-8&useSSL=false&tinyInt1isBit=false
      username: root
      password: anbot2017
-
+# REDIS (RedisProperties)
+# Redis数据库索引（默认为0）
+  redis: 
+    database: 0  
+# Redis服务器地址
+    host: 192.168.0.205
+# Redis服务器连接端口
+    port: 6379  
+# Redis服务器连接密码（默认为空）
+    password:  
+# 连接池最大连接数（使用负值表示没有限制）
+    pool:
+      max-active: 8  
+# 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1  
+# 连接池中的最大空闲连接
+      max-idle: 8  
+# 连接池中的最小空闲连接
+      min-idle: 0  
+# 连接超时时间（毫秒）
+    timeout: 0  
 mybatis:
   type-aliases-package: com.entity
   config-locations:  classpath:mybatis-config.xml
@@ -21,10 +41,6 @@ pagehelper:
     supportMethodsArguments: true
     params: count=countSql
     
-#logging: 
-#   file: log.log
-#   level:
-#     com.controller: debug
-#     com.service : warn
+
     
  

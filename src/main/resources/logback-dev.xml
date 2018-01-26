@@ -47,19 +47,19 @@
     
     
     <!-- 日志输出级别 (所有的日志文件都在FILE标签的文件里)--> 
-<!--     <root level="INFO"> -->
-<!--         <appender-ref ref="STDOUT" /> -->
-<!--         <appender-ref ref="FILE" /> -->
-<!--     </root> -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
     
     
-     <!-- 日志输出级别 (日志文件不在同一个文件里)--> 
-    <logger name="com.controller" level="INFO" additivity="false">  
-        <appender-ref ref="STDOUT"/>  
-        <appender-ref ref="FILE"/>
-    </logger>  
-    <logger name="com.service" level="INFO" additivity="false">  
-        <appender-ref ref="STDOUT"/>  
-        <appender-ref ref="FILE1"/>  
-    </logger>  
+<!--      日志输出级别 (日志文件不在同一个文件里)  -->
+<!--     <logger name="com.controller" level="DEBUG" additivity="false">   -->
+<!--         <appender-ref ref="STDOUT"/>   -->
+<!--         <appender-ref ref="FILE"/> -->
+<!--     </logger>   -->
+<!--     <logger name="com.service" level="INFO" additivity="false">   -->
+<!--         <appender-ref ref="STDOUT"/>   -->
+<!--         <appender-ref ref="FILE1"/>   -->
+<!--     </logger>   -->
 </configuration>
