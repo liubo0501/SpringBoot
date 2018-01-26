@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.fastjson.JSON;
 import com.entity.Robot;
 import com.entity.User;
-import com.mapper.RobotMapper;
-import com.mapper.UserMapper;
+import com.mapper.test1.RobotMapper1;
 import com.redis.RedisClient;
 import com.service.MyService;
 
@@ -28,15 +27,19 @@ public class MyController {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());  
 	
 	@Autowired
-	private UserMapper userMapper;
-	@Autowired
-	private RobotMapper robotMapper;
+	private RobotMapper1 robotMapper;
 	@Autowired
 	private MyService service;
 	@Autowired
     private StringRedisTemplate stringRedisTemplate;
     @Autowired  
 	private RedisClient redisClient;  
+	
+    @Autowired
+    private com.mapper.test1.UserMapper1 user1Mapper;
+
+	@Autowired
+	private com.mapper.test2.UserMapper2 user2Mapper;
 	
     @RequestMapping("/hello1")
     public String Hello(){
@@ -46,9 +49,9 @@ public class MyController {
          logger.warn("This is a warn message");  
          logger.error("This is an error message");
          
-    	User user = userMapper.getUserById(1);
+    	User user = user1Mapper.getUserById(1);
     	user.setName("管理员123");
-    	userMapper.update(1, user);
+    	user1Mapper.update(1, user);
     	logger.error(user.getUsername());
     	
     	stringRedisTemplate.opsForValue().set("username", user.getUsername());
@@ -97,5 +100,16 @@ public class MyController {
     @GetMapping("/helloword")
     public ResponseEntity hello(HttpSession httpSession) {
         return ResponseEntity.ok(httpSession.getAttribute("user"));
+    }
+    
+    @RequestMapping("/twoData")
+    public String twoData(){
+    	User user1 = user1Mapper.getUserById(1);
+    	
+    	User user2 = user2Mapper.getUserById(1);
+    	logger.error("user1:{}",JSON.toJSONString(user1) );
+    	logger.error("user2:{}",JSON.toJSONString(user2) );
+        return "spring boot success ! and profile is ==>"+
+        env.getProperty("server.port")+"=====>";
     }
 }

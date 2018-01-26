@@ -1,4 +1,4 @@
-package com.mapper;
+package com.mapper.test1;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import com.entity.User;
  * @Description
  */
 @Repository
-public interface UserMapper {
+public interface UserMapper1 {
 
 	User getUserById(Integer id);
 

@@ -1,4 +1,4 @@
-package com.mapper;
+package com.mapper.test2;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import com.entity.Robot;
  * @Description
  */
 @Repository
-public interface RobotMapper {
+public interface RobotMapper2 {
 
 	public List<Robot> getRobotList();
 	
